@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Led control using ESP32 with SSI</title>
+</head>
+<body>
+<p><strong>State:</strong> Led <span style='color:red;'>%LED_STATE_UPPERCASE%</span> <img src="/led_%LED_STATE%.gif"></p>
+<p><strong>Action:</strong> To turn the led <span style='color:red;'>%LED_STATE_INVERSE_UPPERCASE%</span> <a href="/led1/%LED_STATE_INVERSE%">click here</a> or on the following image
+   <form action="/led1/%LED_STATE_INVERSE%">
+   <input type="image" src="/led_%LED_STATE_INVERSE%.gif" alt="Submit"></form></p>
+<p><form action="/get_text_box"> Text box: <input type="text" name="input1" value="">
+   <input type="submit" value="CLICK HERE"></form></p>
+<p>Current message text: <strong>"%MSG_TEXT%"</strong>.<p>
+</body>
+</html>
